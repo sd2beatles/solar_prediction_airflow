@@ -1,0 +1,107 @@
+[2022-11-20 02:43:59,243] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_solar_table 2022-11-19T00:00:00+00:00 [queued]>
+[2022-11-20 02:43:59,310] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_solar_table 2022-11-19T00:00:00+00:00 [queued]>
+[2022-11-20 02:43:59,312] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 02:43:59,313] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2022-11-20 02:43:59,314] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 02:43:59,350] {taskinstance.py:1089} INFO - Executing <Task(MySqlOperator): checkfiles.check_solar_table> on 2022-11-19T00:00:00+00:00
+[2022-11-20 02:43:59,363] {standard_task_runner.py:52} INFO - Started process 48 to run task
+[2022-11-20 02:43:59,377] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_solar', 'checkfiles.check_solar_table', '2022-11-19T00:00:00+00:00', '--job-id', '6', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpsfbbhdmv', '--error-file', '/tmp/tmpjqfk7hwv']
+[2022-11-20 02:43:59,379] {standard_task_runner.py:77} INFO - Job 6: Subtask checkfiles.check_solar_table
+[2022-11-20 02:43:59,555] {logging_mixin.py:104} INFO - Running <TaskInstance: etl_solar.checkfiles.check_solar_table 2022-11-19T00:00:00+00:00 [running]> on host 13d16c461581
+[2022-11-20 02:43:59,714] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_solar_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-19T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-19T00:00:00+00:00
+[2022-11-20 02:43:59,717] {mysql.py:72} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS geography(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location));
+                
+[2022-11-20 02:43:59,749] {base.py:78} INFO - Using connection to: id: mysql_solar. Host: host.docker.internal, Port: 3306, Schema: solardb, Login: david, Password: XXXXXXXX, extra: None
+[2022-11-20 02:44:01,813] {taskinstance.py:1482} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1138, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/mysql/operators/mysql.py", line 74, in execute
+    hook.run(self.sql, autocommit=self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/dbapi.py", line 173, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/mysql/hooks/mysql.py", line 168, in get_conn
+    return MySQLdb.connect(**conn_config)
+  File "/home/airflow/.local/lib/python3.6/site-packages/MySQLdb/__init__.py", line 130, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.6/site-packages/MySQLdb/connections.py", line 185, in __init__
+    super().__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2003, "Can't connect to MySQL server on 'host.docker.internal:3306' (111)")
+[2022-11-20 02:44:01,829] {taskinstance.py:1532} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=checkfiles.check_solar_table, execution_date=20221119T000000, start_date=20221120T024359, end_date=20221120T024401
+[2022-11-20 02:44:01,923] {local_task_job.py:146} INFO - Task exited with return code 1
+[2022-11-20 05:59:55,515] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_solar_table 2022-11-19T00:00:00+00:00 [queued]>
+[2022-11-20 05:59:55,652] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_solar_table 2022-11-19T00:00:00+00:00 [queued]>
+[2022-11-20 05:59:55,666] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 05:59:55,676] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2022-11-20 05:59:55,686] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 05:59:55,876] {taskinstance.py:1089} INFO - Executing <Task(MySqlOperator): checkfiles.check_solar_table> on 2022-11-19T00:00:00+00:00
+[2022-11-20 05:59:55,910] {standard_task_runner.py:52} INFO - Started process 57 to run task
+[2022-11-20 05:59:55,953] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_solar', 'checkfiles.check_solar_table', '2022-11-19T00:00:00+00:00', '--job-id', '15', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpjok4cy4b', '--error-file', '/tmp/tmpwixy6xia']
+[2022-11-20 05:59:55,955] {standard_task_runner.py:77} INFO - Job 15: Subtask checkfiles.check_solar_table
+[2022-11-20 05:59:56,273] {logging_mixin.py:104} INFO - Running <TaskInstance: etl_solar.checkfiles.check_solar_table 2022-11-19T00:00:00+00:00 [running]> on host cc7a6235a592
+[2022-11-20 05:59:56,756] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_solar_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-19T00:00:00+00:00
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-19T00:00:00+00:00
+[2022-11-20 05:59:56,759] {mysql.py:72} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS geography(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location));
+                
+[2022-11-20 05:59:57,139] {taskinstance.py:1482} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1138, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/mysql/operators/mysql.py", line 74, in execute
+    hook.run(self.sql, autocommit=self.autocommit, parameters=self.parameters)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/dbapi.py", line 173, in run
+    with closing(self.get_conn()) as conn:
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/providers/mysql/hooks/mysql.py", line 159, in get_conn
+    getattr(self, self.conn_name_attr)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/hooks/base.py", line 67, in get_connection
+    conn = Connection.get_connection_from_secrets(conn_id)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/connection.py", line 354, in get_connection_from_secrets
+    raise AirflowNotFoundException(f"The conn_id `{conn_id}` isn't defined")
+airflow.exceptions.AirflowNotFoundException: The conn_id `mysql_solar` isn't defined
+[2022-11-20 05:59:57,207] {taskinstance.py:1532} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=checkfiles.check_solar_table, execution_date=20221119T000000, start_date=20221120T055955, end_date=20221120T055957
+[2022-11-20 05:59:57,470] {local_task_job.py:146} INFO - Task exited with return code 1

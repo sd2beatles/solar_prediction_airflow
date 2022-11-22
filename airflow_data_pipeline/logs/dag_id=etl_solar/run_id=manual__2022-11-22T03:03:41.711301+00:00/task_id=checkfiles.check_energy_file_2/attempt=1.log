@@ -1,0 +1,34 @@
+[2022-11-22 03:03:45,169] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 manual__2022-11-22T03:03:41.711301+00:00 [queued]>
+[2022-11-22 03:03:45,232] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 manual__2022-11-22T03:03:41.711301+00:00 [queued]>
+[2022-11-22 03:03:45,234] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:03:45,235] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 03:03:45,236] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:03:45,326] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): checkfiles.check_energy_file_2> on 2022-11-22 03:03:41.711301+00:00
+[2022-11-22 03:03:45,343] {standard_task_runner.py:52} INFO - Started process 88 to run task
+[2022-11-22 03:03:45,364] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_energy_file_2', 'manual__2022-11-22T03:03:41.711301+00:00', '--job-id', '85', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpy7fqo162', '--error-file', '/tmp/tmpwof_0r0c']
+[2022-11-22 03:03:45,366] {standard_task_runner.py:80} INFO - Job 85: Subtask checkfiles.check_energy_file_2
+[2022-11-22 03:03:45,700] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_energy_file_2 manual__2022-11-22T03:03:41.711301+00:00 [running]> on host 42206527e50b
+[2022-11-22 03:03:46,148] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_energy_file_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-22T03:03:41.711301+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-22T03:03:41.711301+00:00
+[2022-11-22 03:03:46,152] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 03:03:46,154] {subprocess.py:74} INFO - Running command: ['bash', '-c', './utilites/check_file.sh ./storage//opt/***']
+[2022-11-22 03:03:46,194] {subprocess.py:85} INFO - Output:
+[2022-11-22 03:03:46,203] {subprocess.py:92} INFO - bash: line 1: ./utilites/check_file.sh: No such file or directory
+[2022-11-22 03:03:46,206] {subprocess.py:96} INFO - Command exited with return code 127
+[2022-11-22 03:03:46,302] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/bash.py", line 195, in execute
+    f'Bash command failed. The command returned a non-zero exit code {result.exit_code}.'
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code 127.
+[2022-11-22 03:03:46,324] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=checkfiles.check_energy_file_2, execution_date=20221122T030341, start_date=20221122T030345, end_date=20221122T030346
+[2022-11-22 03:03:46,396] {standard_task_runner.py:97} ERROR - Failed to execute job 85 for task checkfiles.check_energy_file_2 (Bash command failed. The command returned a non-zero exit code 127.; 88)
+[2022-11-22 03:03:46,460] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-11-22 03:03:46,667] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

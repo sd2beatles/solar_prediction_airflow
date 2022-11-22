@@ -1,0 +1,24 @@
+[2022-11-22 04:51:09,562] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_geography_info manual__2022-11-22T04:50:52.227175+00:00 [queued]>
+[2022-11-22 04:51:09,612] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_geography_info manual__2022-11-22T04:50:52.227175+00:00 [queued]>
+[2022-11-22 04:51:09,614] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:51:09,615] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:51:09,617] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:51:09,704] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): load_files.extract_geography_info> on 2022-11-22 04:50:52.227175+00:00
+[2022-11-22 04:51:09,722] {standard_task_runner.py:52} INFO - Started process 283 to run task
+[2022-11-22 04:51:09,740] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'load_files.extract_geography_info', 'manual__2022-11-22T04:50:52.227175+00:00', '--job-id', '183', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmph1hpnx5y', '--error-file', '/tmp/tmp2c7rj_sy']
+[2022-11-22 04:51:09,745] {standard_task_runner.py:80} INFO - Job 183: Subtask load_files.extract_geography_info
+[2022-11-22 04:51:10,296] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.load_files.extract_geography_info manual__2022-11-22T04:50:52.227175+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:51:10,951] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=load_files.extract_geography_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-22T04:50:52.227175+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-22T04:50:52.227175+00:00
+[2022-11-22 04:51:11,020] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-11-22 04:51:11,175] {python.py:173} INFO - Done. Returned value was: None
+[2022-11-22 04:51:11,247] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=load_files.extract_geography_info, execution_date=20221122T045052, start_date=20221122T045109, end_date=20221122T045111
+[2022-11-22 04:51:11,486] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 04:51:12,126] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

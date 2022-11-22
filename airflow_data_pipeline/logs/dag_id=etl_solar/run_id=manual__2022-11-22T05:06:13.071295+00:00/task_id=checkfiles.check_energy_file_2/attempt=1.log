@@ -1,0 +1,28 @@
+[2022-11-22 05:06:17,519] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 manual__2022-11-22T05:06:13.071295+00:00 [queued]>
+[2022-11-22 05:06:17,580] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 manual__2022-11-22T05:06:13.071295+00:00 [queued]>
+[2022-11-22 05:06:17,582] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 05:06:17,584] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 05:06:17,585] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 05:06:17,682] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): checkfiles.check_energy_file_2> on 2022-11-22 05:06:13.071295+00:00
+[2022-11-22 05:06:17,699] {standard_task_runner.py:52} INFO - Started process 427 to run task
+[2022-11-22 05:06:17,718] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_energy_file_2', 'manual__2022-11-22T05:06:13.071295+00:00', '--job-id', '223', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp3nyiog80', '--error-file', '/tmp/tmp4tbz49se']
+[2022-11-22 05:06:17,723] {standard_task_runner.py:80} INFO - Job 223: Subtask checkfiles.check_energy_file_2
+[2022-11-22 05:06:18,098] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_energy_file_2 manual__2022-11-22T05:06:13.071295+00:00 [running]> on host 8a647070b091
+[2022-11-22 05:06:18,575] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_energy_file_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-22T05:06:13.071295+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-22T05:06:13.071295+00:00
+[2022-11-22 05:06:18,580] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 05:06:18,583] {subprocess.py:74} INFO - Running command: ['bash', '-c', '/opt/***/utilities/check_file.sh /opt/***/utilities/storage/energy_2.csv']
+[2022-11-22 05:06:18,624] {subprocess.py:85} INFO - Output:
+[2022-11-22 05:06:18,654] {subprocess.py:92} INFO - File /opt/***/utilities/storage/energy_2.csv does not exist
+[2022-11-22 05:06:18,658] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 05:06:18,878] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=checkfiles.check_energy_file_2, execution_date=20221122T050613, start_date=20221122T050617, end_date=20221122T050618
+[2022-11-22 05:06:18,985] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 05:06:19,234] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

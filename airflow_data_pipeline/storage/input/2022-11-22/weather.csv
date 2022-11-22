@@ -1,0 +1,4 @@
+,locdatetime,location,updated_date,temperature,precipitation_form,precipitation_prob,humidity,wind_speed,wind_direction,cloud
+0,fmt:'2021' mft:'01' dft:'01' T08:00:00,Seoul,2022-11-20,23.23,11.0,0.3,23.3,11.2,23.1,11.0
+1,fmt:'2021' mft:'01' dft:'02' T08:00:00,Seoul,2022-11-20,23.23,11.0,0.3,23.3,11.2,23.1,11.0
+2,fmt:'2021' mft:'01' dft:'03' T08:00:00,Seoul,2022-11-20,23.23,11.0,0.3,23.3,11.2,23.1,11.0

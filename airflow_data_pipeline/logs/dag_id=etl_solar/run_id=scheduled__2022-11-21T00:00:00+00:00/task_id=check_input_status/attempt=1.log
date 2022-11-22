@@ -1,0 +1,279 @@
+[2022-11-22 02:59:29,594] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 02:59:29,673] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 02:59:29,675] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 02:59:29,676] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 02:59:29,677] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 02:59:29,909] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 02:59:29,942] {standard_task_runner.py:52} INFO - Started process 59 to run task
+[2022-11-22 02:59:29,964] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '72', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpm6jkhlun', '--error-file', '/tmp/tmpe7gcj994']
+[2022-11-22 02:59:29,971] {standard_task_runner.py:80} INFO - Job 72: Subtask check_input_status
+[2022-11-22 02:59:30,174] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 02:59:30,670] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 42206527e50b
+[2022-11-22 02:59:31,293] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 02:59:31,309] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 02:59:31,314] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 02:59:31,375] {subprocess.py:85} INFO - Output:
+[2022-11-22 02:59:31,385] {subprocess.py:92} INFO - success
+[2022-11-22 02:59:31,387] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 02:59:31,633] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T025929, end_date=20221122T025931
+[2022-11-22 02:59:31,866] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 02:59:32,240] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 03:03:27,255] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:03:27,296] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:03:27,297] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:03:27,299] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 03:03:27,301] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:03:27,384] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 03:03:27,399] {standard_task_runner.py:52} INFO - Started process 73 to run task
+[2022-11-22 03:03:27,413] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '79', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpnddeyjtj', '--error-file', '/tmp/tmpisvn9l1t']
+[2022-11-22 03:03:27,416] {standard_task_runner.py:80} INFO - Job 79: Subtask check_input_status
+[2022-11-22 03:03:27,480] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 03:03:27,653] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 42206527e50b
+[2022-11-22 03:03:28,135] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 03:03:28,140] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 03:03:28,142] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 03:03:28,174] {subprocess.py:85} INFO - Output:
+[2022-11-22 03:03:28,184] {subprocess.py:92} INFO - success
+[2022-11-22 03:03:28,187] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 03:03:28,387] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T030327, end_date=20221122T030328
+[2022-11-22 03:03:28,470] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 03:03:28,650] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 03:06:33,856] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:06:33,900] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:06:33,901] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:06:33,903] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 03:06:33,904] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:06:34,000] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 03:06:34,050] {standard_task_runner.py:52} INFO - Started process 100 to run task
+[2022-11-22 03:06:34,066] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '90', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp4as_f_hp', '--error-file', '/tmp/tmp9j8aqm_b']
+[2022-11-22 03:06:34,069] {standard_task_runner.py:80} INFO - Job 90: Subtask check_input_status
+[2022-11-22 03:06:34,155] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 03:06:34,405] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 42206527e50b
+[2022-11-22 03:06:35,006] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 03:06:35,015] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 03:06:35,027] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 03:06:35,139] {subprocess.py:85} INFO - Output:
+[2022-11-22 03:06:35,169] {subprocess.py:92} INFO - success
+[2022-11-22 03:06:35,172] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 03:06:35,571] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T030633, end_date=20221122T030635
+[2022-11-22 03:06:35,837] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 03:06:36,268] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 03:09:12,659] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:09:12,758] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:09:12,761] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:09:12,766] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 03:09:12,768] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:09:12,856] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 03:09:12,887] {standard_task_runner.py:52} INFO - Started process 147 to run task
+[2022-11-22 03:09:12,906] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '103', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp06dlu8gc', '--error-file', '/tmp/tmp91e3yinz']
+[2022-11-22 03:09:12,908] {standard_task_runner.py:80} INFO - Job 103: Subtask check_input_status
+[2022-11-22 03:09:12,980] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 03:09:13,381] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 42206527e50b
+[2022-11-22 03:09:13,923] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 03:09:13,928] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 03:09:13,931] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 03:09:13,973] {subprocess.py:85} INFO - Output:
+[2022-11-22 03:09:13,983] {subprocess.py:92} INFO - success
+[2022-11-22 03:09:13,986] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 03:09:14,147] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T030912, end_date=20221122T030914
+[2022-11-22 03:09:14,249] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 03:09:14,508] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 03:12:52,229] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:12:52,281] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 03:12:52,282] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:12:52,283] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 03:12:52,284] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 03:12:52,369] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 03:12:52,381] {standard_task_runner.py:52} INFO - Started process 176 to run task
+[2022-11-22 03:12:52,399] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '116', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp_zl2mm49', '--error-file', '/tmp/tmpoj60q9y6']
+[2022-11-22 03:12:52,401] {standard_task_runner.py:80} INFO - Job 116: Subtask check_input_status
+[2022-11-22 03:12:52,465] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 03:12:52,672] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 42206527e50b
+[2022-11-22 03:12:53,153] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 03:12:53,157] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 03:12:53,160] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 03:12:53,198] {subprocess.py:85} INFO - Output:
+[2022-11-22 03:12:53,209] {subprocess.py:92} INFO - success
+[2022-11-22 03:12:53,211] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 03:12:53,404] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T031252, end_date=20221122T031253
+[2022-11-22 03:12:53,531] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 03:12:53,675] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 04:00:20,118] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:00:20,167] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:00:20,169] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:00:20,171] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:00:20,172] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:00:20,240] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 04:00:20,256] {standard_task_runner.py:52} INFO - Started process 65 to run task
+[2022-11-22 04:00:20,276] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '124', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp124s1l0b', '--error-file', '/tmp/tmph4_d84dg']
+[2022-11-22 04:00:20,282] {standard_task_runner.py:80} INFO - Job 124: Subtask check_input_status
+[2022-11-22 04:00:20,368] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 04:00:20,598] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:00:21,049] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 04:00:21,057] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 04:00:21,061] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 04:00:21,104] {subprocess.py:85} INFO - Output:
+[2022-11-22 04:00:21,120] {subprocess.py:92} INFO - success
+[2022-11-22 04:00:21,123] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 04:00:21,305] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T040020, end_date=20221122T040021
+[2022-11-22 04:00:21,416] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 04:00:21,706] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 04:02:26,400] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:02:26,458] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:02:26,460] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:02:26,462] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:02:26,463] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:02:26,558] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 04:02:26,575] {standard_task_runner.py:52} INFO - Started process 128 to run task
+[2022-11-22 04:02:26,591] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '141', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpr5h_5rpx', '--error-file', '/tmp/tmph3tl92vb']
+[2022-11-22 04:02:26,596] {standard_task_runner.py:80} INFO - Job 141: Subtask check_input_status
+[2022-11-22 04:02:26,660] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 04:02:26,891] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:02:27,307] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 04:02:27,314] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 04:02:27,318] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 04:02:27,360] {subprocess.py:85} INFO - Output:
+[2022-11-22 04:02:27,368] {subprocess.py:92} INFO - success
+[2022-11-22 04:02:27,370] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 04:02:27,531] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T040226, end_date=20221122T040227
+[2022-11-22 04:02:27,615] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 04:02:27,808] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 04:12:47,334] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:12:47,380] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:12:47,381] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:12:47,382] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:12:47,384] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:12:47,457] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 04:12:47,471] {standard_task_runner.py:52} INFO - Started process 178 to run task
+[2022-11-22 04:12:47,487] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '155', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpovwb7p3v', '--error-file', '/tmp/tmppwz32ykg']
+[2022-11-22 04:12:47,498] {standard_task_runner.py:80} INFO - Job 155: Subtask check_input_status
+[2022-11-22 04:12:47,584] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 04:12:47,761] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:12:48,097] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 04:12:48,102] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 04:12:48,105] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 04:12:48,136] {subprocess.py:85} INFO - Output:
+[2022-11-22 04:12:48,142] {subprocess.py:92} INFO - success
+[2022-11-22 04:12:48,144] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 04:12:48,268] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T041247, end_date=20221122T041248
+[2022-11-22 04:12:48,347] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 04:12:48,503] {local_task_job.py:273} INFO - 2 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 04:44:30,507] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:44:30,581] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:44:30,583] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:44:30,584] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:44:30,586] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:44:30,647] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-21 00:00:00+00:00
+[2022-11-22 04:44:30,661] {standard_task_runner.py:52} INFO - Started process 226 to run task
+[2022-11-22 04:44:30,675] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '168', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpiwi0pfsh', '--error-file', '/tmp/tmp6c1bn3y7']
+[2022-11-22 04:44:30,680] {standard_task_runner.py:80} INFO - Job 168: Subtask check_input_status
+[2022-11-22 04:44:30,744] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 04:44:30,993] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status scheduled__2022-11-21T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:44:31,475] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 04:44:31,481] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-22 04:44:31,483] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-22 04:44:31,532] {subprocess.py:85} INFO - Output:
+[2022-11-22 04:44:31,544] {subprocess.py:92} INFO - success
+[2022-11-22 04:44:31,548] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-22 04:44:31,713] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221121T000000, start_date=20221122T044430, end_date=20221122T044431
+[2022-11-22 04:44:31,829] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-22 04:44:32,104] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

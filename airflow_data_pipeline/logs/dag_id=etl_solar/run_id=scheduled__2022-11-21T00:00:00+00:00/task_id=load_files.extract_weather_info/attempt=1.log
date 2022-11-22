@@ -1,0 +1,83 @@
+[2022-11-22 04:02:31,577] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_weather_info scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:02:31,623] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_weather_info scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:02:31,624] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:02:31,626] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:02:31,627] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:02:31,697] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): load_files.extract_weather_info> on 2022-11-21 00:00:00+00:00
+[2022-11-22 04:02:31,711] {standard_task_runner.py:52} INFO - Started process 136 to run task
+[2022-11-22 04:02:31,727] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'load_files.extract_weather_info', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '142', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpnqyj2tq2', '--error-file', '/tmp/tmp8l40esmg']
+[2022-11-22 04:02:31,733] {standard_task_runner.py:80} INFO - Job 142: Subtask load_files.extract_weather_info
+[2022-11-22 04:02:31,800] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 04:02:31,998] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.load_files.extract_weather_info scheduled__2022-11-21T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:02:32,368] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=load_files.extract_weather_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 04:02:32,373] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/preprocess/connection.py", line 12, in inner_function
+    return function(**kwargs)
+  File "/opt/airflow/dags/groups/group_loads.py", line 20, in save_data
+    sql_data=context['mysqlServer'].get_pandas_df(sql=['params']['sql'])
+TypeError: list indices must be integers or slices, not str
+[2022-11-22 04:02:32,437] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=load_files.extract_weather_info, execution_date=20221121T000000, start_date=20221122T040231, end_date=20221122T040232
+[2022-11-22 04:02:32,493] {standard_task_runner.py:97} ERROR - Failed to execute job 142 for task load_files.extract_weather_info (list indices must be integers or slices, not str; 136)
+[2022-11-22 04:02:32,543] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-11-22 04:02:32,723] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-22 04:12:51,533] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_weather_info scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:12:51,590] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_weather_info scheduled__2022-11-21T00:00:00+00:00 [queued]>
+[2022-11-22 04:12:51,591] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:12:51,592] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-22 04:12:51,594] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-22 04:12:51,663] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): load_files.extract_weather_info> on 2022-11-21 00:00:00+00:00
+[2022-11-22 04:12:51,681] {standard_task_runner.py:52} INFO - Started process 184 to run task
+[2022-11-22 04:12:51,699] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'load_files.extract_weather_info', 'scheduled__2022-11-21T00:00:00+00:00', '--job-id', '156', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp8gau81h2', '--error-file', '/tmp/tmpt7bsno6w']
+[2022-11-22 04:12:51,704] {standard_task_runner.py:80} INFO - Job 156: Subtask load_files.extract_weather_info
+[2022-11-22 04:12:51,777] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-22 04:12:52,189] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.load_files.extract_weather_info scheduled__2022-11-21T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-22 04:12:52,727] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=load_files.extract_weather_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-21T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-21T00:00:00+00:00
+[2022-11-22 04:12:52,778] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-11-22 04:12:52,928] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/preprocess/connection.py", line 12, in inner_function
+    return function(**kwargs)
+  File "/opt/airflow/dags/groups/group_loads.py", line 22, in save_data
+    sql_data.to_csv(context['params']['dest_path'])
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/core/generic.py", line 3482, in to_csv
+    storage_options=storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/format.py", line 1105, in to_csv
+    csv_formatter.save()
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/formats/csvs.py", line 243, in save
+    storage_options=self.storage_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/common.py", line 707, in get_handle
+    newline="",
+FileNotFoundError: [Errno 2] No such file or directory: '/opt/airflow/storage/input/2022-11-22/weather.csv'
+[2022-11-22 04:12:53,001] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=load_files.extract_weather_info, execution_date=20221121T000000, start_date=20221122T041251, end_date=20221122T041252
+[2022-11-22 04:12:53,068] {standard_task_runner.py:97} ERROR - Failed to execute job 156 for task load_files.extract_weather_info ([Errno 2] No such file or directory: '/opt/airflow/storage/input/2022-11-22/weather.csv'; 184)
+[2022-11-22 04:12:53,121] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-11-22 04:12:53,309] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

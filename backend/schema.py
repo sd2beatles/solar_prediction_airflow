@@ -2,7 +2,7 @@ from marshmallow import Schema,fields
 from pkg_resources import require
 
   
-
+#===========weather schemas=====================
 class PlainWeatherSchema(Schema):
     locdatetime=fields.Str(required=True)
     location=fields.Str(required=True)
@@ -29,9 +29,8 @@ class WeatherSearchSchema(Schema):
     updated_date=fields.Str(required=True)
     
 
-    
-    
-    
+#======================geo schemas===========================
+
 class PlainGeoSchema(Schema):
     locdate=fields.Str(required=True)
     location=fields.Str(required=True)

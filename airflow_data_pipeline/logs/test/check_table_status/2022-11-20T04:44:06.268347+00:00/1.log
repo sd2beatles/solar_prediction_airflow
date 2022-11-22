@@ -1,0 +1,37 @@
+[2022-11-20 04:44:07,856] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: test.check_table_status 2022-11-20T04:44:06.268347+00:00 [queued]>
+[2022-11-20 04:44:07,912] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: test.check_table_status 2022-11-20T04:44:06.268347+00:00 [queued]>
+[2022-11-20 04:44:07,916] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 04:44:07,917] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2022-11-20 04:44:07,919] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 04:44:08,005] {taskinstance.py:1089} INFO - Executing <Task(BashOperator): check_table_status> on 2022-11-20T04:44:06.268347+00:00
+[2022-11-20 04:44:08,025] {standard_task_runner.py:52} INFO - Started process 50 to run task
+[2022-11-20 04:44:08,077] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'test', 'check_table_status', '2022-11-20T04:44:06.268347+00:00', '--job-id', '9', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmp3lxu109y', '--error-file', '/tmp/tmpu8sqt_1o']
+[2022-11-20 04:44:08,079] {standard_task_runner.py:77} INFO - Job 9: Subtask check_table_status
+[2022-11-20 04:44:08,444] {logging_mixin.py:104} INFO - Running <TaskInstance: test.check_table_status 2022-11-20T04:44:06.268347+00:00 [running]> on host cc7a6235a592
+[2022-11-20 04:44:08,716] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=test
+AIRFLOW_CTX_TASK_ID=check_table_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-20T04:44:06.268347+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-20T04:44:06.268347+00:00
+[2022-11-20 04:44:08,723] {bash.py:135} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-20 04:44:08,732] {bash.py:158} INFO - Running command: ./bash_command/check_file.sh ./storage/airflow.csv
+[2022-11-20 04:44:08,766] {bash.py:169} INFO - Output:
+[2022-11-20 04:44:08,773] {bash.py:173} INFO - bash: ./bash_command/check_file.sh: No such file or directory
+[2022-11-20 04:44:08,775] {bash.py:177} INFO - Command exited with return code 127
+[2022-11-20 04:44:08,836] {taskinstance.py:1482} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1138, in _run_raw_task
+    self._prepare_and_execute_task_with_callbacks(context, task)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1311, in _prepare_and_execute_task_with_callbacks
+    result = self._execute_task(context, task_copy)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/models/taskinstance.py", line 1341, in _execute_task
+    result = task_copy.execute(context=context)
+  File "/home/airflow/.local/lib/python3.6/site-packages/airflow/operators/bash.py", line 180, in execute
+    raise AirflowException('Bash command failed. The command returned a non-zero exit code.')
+airflow.exceptions.AirflowException: Bash command failed. The command returned a non-zero exit code.
+[2022-11-20 04:44:08,845] {taskinstance.py:1532} INFO - Marking task as FAILED. dag_id=test, task_id=check_table_status, execution_date=20221120T044406, start_date=20221120T044407, end_date=20221120T044408
+[2022-11-20 04:44:08,977] {local_task_job.py:146} INFO - Task exited with return code 1

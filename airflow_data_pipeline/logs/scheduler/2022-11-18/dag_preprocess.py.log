@@ -4528,3 +4528,269 @@ AttributeError: 'NoneType' object has no attribute 'update_relative'
 [2022-11-18 15:19:31,411] {logging_mixin.py:104} INFO - [2022-11-18 15:19:31,408] {dag.py:1824} INFO - Sync 1 DAGs
 [2022-11-18 15:19:31,543] {logging_mixin.py:104} INFO - [2022-11-18 15:19:31,542] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
 [2022-11-18 15:19:31,584] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.329 seconds
+[2022-11-18 15:20:01,721] {scheduler_job.py:182} INFO - Started process (PID=85) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:20:01,740] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:20:01,743] {logging_mixin.py:104} INFO - [2022-11-18 15:20:01,743] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:20:03,292] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:20:03,363] {logging_mixin.py:104} INFO - [2022-11-18 15:20:03,363] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:20:03,476] {logging_mixin.py:104} INFO - [2022-11-18 15:20:03,476] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:20:03,515] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.805 seconds
+[2022-11-18 15:20:34,035] {scheduler_job.py:182} INFO - Started process (PID=88) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:20:34,040] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:20:34,043] {logging_mixin.py:104} INFO - [2022-11-18 15:20:34,042] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:20:35,915] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:20:35,977] {logging_mixin.py:104} INFO - [2022-11-18 15:20:35,977] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:20:36,078] {logging_mixin.py:104} INFO - [2022-11-18 15:20:36,077] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:20:36,118] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.097 seconds
+[2022-11-18 15:21:06,789] {scheduler_job.py:182} INFO - Started process (PID=91) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:21:06,794] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:21:06,797] {logging_mixin.py:104} INFO - [2022-11-18 15:21:06,797] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:21:08,507] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:21:08,595] {logging_mixin.py:104} INFO - [2022-11-18 15:21:08,594] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:21:08,726] {logging_mixin.py:104} INFO - [2022-11-18 15:21:08,725] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:21:08,768] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.993 seconds
+[2022-11-18 15:21:39,617] {scheduler_job.py:182} INFO - Started process (PID=94) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:21:39,622] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:21:39,626] {logging_mixin.py:104} INFO - [2022-11-18 15:21:39,625] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:21:41,532] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:21:41,609] {logging_mixin.py:104} INFO - [2022-11-18 15:21:41,609] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:21:41,725] {logging_mixin.py:104} INFO - [2022-11-18 15:21:41,724] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:21:41,759] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.156 seconds
+[2022-11-18 15:22:12,274] {scheduler_job.py:182} INFO - Started process (PID=97) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:22:12,279] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:22:12,282] {logging_mixin.py:104} INFO - [2022-11-18 15:22:12,282] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:22:14,240] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:22:14,330] {logging_mixin.py:104} INFO - [2022-11-18 15:22:14,330] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:22:14,511] {logging_mixin.py:104} INFO - [2022-11-18 15:22:14,509] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:22:14,554] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.293 seconds
+[2022-11-18 15:22:44,924] {scheduler_job.py:182} INFO - Started process (PID=101) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:22:44,935] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:22:44,943] {logging_mixin.py:104} INFO - [2022-11-18 15:22:44,942] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:22:47,040] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:22:47,144] {logging_mixin.py:104} INFO - [2022-11-18 15:22:47,143] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:22:47,300] {logging_mixin.py:104} INFO - [2022-11-18 15:22:47,300] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:22:47,342] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.442 seconds
+[2022-11-18 15:23:17,940] {scheduler_job.py:182} INFO - Started process (PID=105) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:23:17,946] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:23:17,950] {logging_mixin.py:104} INFO - [2022-11-18 15:23:17,949] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:23:20,550] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:23:20,646] {logging_mixin.py:104} INFO - [2022-11-18 15:23:20,646] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:23:20,819] {logging_mixin.py:104} INFO - [2022-11-18 15:23:20,819] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:23:20,859] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.937 seconds
+[2022-11-18 15:23:51,489] {scheduler_job.py:182} INFO - Started process (PID=108) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:23:51,494] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:23:51,498] {logging_mixin.py:104} INFO - [2022-11-18 15:23:51,497] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:23:53,332] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:23:53,419] {logging_mixin.py:104} INFO - [2022-11-18 15:23:53,418] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:23:53,559] {logging_mixin.py:104} INFO - [2022-11-18 15:23:53,559] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:23:53,605] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.131 seconds
+[2022-11-18 15:24:23,999] {scheduler_job.py:182} INFO - Started process (PID=111) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:24:24,005] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:24:24,010] {logging_mixin.py:104} INFO - [2022-11-18 15:24:24,009] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:24:25,935] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:24:26,016] {logging_mixin.py:104} INFO - [2022-11-18 15:24:26,015] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:24:26,124] {logging_mixin.py:104} INFO - [2022-11-18 15:24:26,123] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:24:26,159] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.175 seconds
+[2022-11-18 15:24:56,540] {scheduler_job.py:182} INFO - Started process (PID=114) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:24:56,546] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:24:56,550] {logging_mixin.py:104} INFO - [2022-11-18 15:24:56,549] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:24:58,364] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:24:58,457] {logging_mixin.py:104} INFO - [2022-11-18 15:24:58,456] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:24:58,635] {logging_mixin.py:104} INFO - [2022-11-18 15:24:58,634] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:24:58,684] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.158 seconds
+[2022-11-18 15:25:29,060] {scheduler_job.py:182} INFO - Started process (PID=117) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:25:29,066] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:25:29,070] {logging_mixin.py:104} INFO - [2022-11-18 15:25:29,069] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:25:30,969] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:25:31,052] {logging_mixin.py:104} INFO - [2022-11-18 15:25:31,051] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:25:31,181] {logging_mixin.py:104} INFO - [2022-11-18 15:25:31,180] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:25:31,222] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.180 seconds
+[2022-11-18 15:26:01,617] {scheduler_job.py:182} INFO - Started process (PID=120) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:26:01,625] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:26:01,628] {logging_mixin.py:104} INFO - [2022-11-18 15:26:01,628] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:26:03,425] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:26:03,510] {logging_mixin.py:104} INFO - [2022-11-18 15:26:03,509] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:26:03,652] {logging_mixin.py:104} INFO - [2022-11-18 15:26:03,652] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:26:03,694] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.091 seconds
+[2022-11-18 15:26:34,111] {scheduler_job.py:182} INFO - Started process (PID=123) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:26:34,115] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:26:34,119] {logging_mixin.py:104} INFO - [2022-11-18 15:26:34,118] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:26:36,045] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:26:36,178] {logging_mixin.py:104} INFO - [2022-11-18 15:26:36,177] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:26:36,316] {logging_mixin.py:104} INFO - [2022-11-18 15:26:36,316] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:26:36,356] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.259 seconds
+[2022-11-18 15:27:06,688] {scheduler_job.py:182} INFO - Started process (PID=126) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:27:06,695] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:27:06,700] {logging_mixin.py:104} INFO - [2022-11-18 15:27:06,699] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:27:09,127] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:27:09,231] {logging_mixin.py:104} INFO - [2022-11-18 15:27:09,230] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:27:09,378] {logging_mixin.py:104} INFO - [2022-11-18 15:27:09,378] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:27:09,419] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.747 seconds
+[2022-11-18 15:27:40,226] {scheduler_job.py:182} INFO - Started process (PID=129) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:27:40,230] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:27:40,234] {logging_mixin.py:104} INFO - [2022-11-18 15:27:40,233] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:27:42,407] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:27:42,494] {logging_mixin.py:104} INFO - [2022-11-18 15:27:42,494] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:27:42,624] {logging_mixin.py:104} INFO - [2022-11-18 15:27:42,624] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:27:42,661] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.452 seconds
+[2022-11-18 15:28:12,809] {scheduler_job.py:182} INFO - Started process (PID=132) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:28:12,814] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:28:12,817] {logging_mixin.py:104} INFO - [2022-11-18 15:28:12,817] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:28:14,812] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:28:14,892] {logging_mixin.py:104} INFO - [2022-11-18 15:28:14,891] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:28:15,022] {logging_mixin.py:104} INFO - [2022-11-18 15:28:15,022] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:28:15,063] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.269 seconds
+[2022-11-18 15:28:45,359] {scheduler_job.py:182} INFO - Started process (PID=135) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:28:45,368] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:28:45,373] {logging_mixin.py:104} INFO - [2022-11-18 15:28:45,372] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:28:47,247] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:28:47,338] {logging_mixin.py:104} INFO - [2022-11-18 15:28:47,337] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:28:47,472] {logging_mixin.py:104} INFO - [2022-11-18 15:28:47,471] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:28:47,512] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.175 seconds
+[2022-11-18 15:29:17,980] {scheduler_job.py:182} INFO - Started process (PID=138) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:29:17,986] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:29:17,992] {logging_mixin.py:104} INFO - [2022-11-18 15:29:17,991] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:29:20,256] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:29:20,373] {logging_mixin.py:104} INFO - [2022-11-18 15:29:20,373] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:29:20,602] {logging_mixin.py:104} INFO - [2022-11-18 15:29:20,601] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:29:20,644] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.678 seconds
+[2022-11-18 15:29:51,633] {scheduler_job.py:182} INFO - Started process (PID=141) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:29:51,639] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:29:51,643] {logging_mixin.py:104} INFO - [2022-11-18 15:29:51,643] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:29:54,775] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:29:54,992] {logging_mixin.py:104} INFO - [2022-11-18 15:29:54,992] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:29:55,271] {logging_mixin.py:104} INFO - [2022-11-18 15:29:55,270] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:29:55,360] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 3.748 seconds
+[2022-11-18 15:30:25,784] {scheduler_job.py:182} INFO - Started process (PID=146) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:30:25,792] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:30:25,795] {logging_mixin.py:104} INFO - [2022-11-18 15:30:25,797] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:30:28,321] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:30:28,484] {logging_mixin.py:104} INFO - [2022-11-18 15:30:28,481] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:30:28,661] {logging_mixin.py:104} INFO - [2022-11-18 15:30:28,660] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:30:28,715] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.953 seconds
+[2022-11-18 15:30:59,427] {scheduler_job.py:182} INFO - Started process (PID=149) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:30:59,432] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:30:59,435] {logging_mixin.py:104} INFO - [2022-11-18 15:30:59,434] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:31:01,386] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:31:01,533] {logging_mixin.py:104} INFO - [2022-11-18 15:31:01,532] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:31:01,680] {logging_mixin.py:104} INFO - [2022-11-18 15:31:01,679] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:31:01,717] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.306 seconds
+[2022-11-18 15:31:31,929] {scheduler_job.py:182} INFO - Started process (PID=152) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:31:31,935] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:31:31,940] {logging_mixin.py:104} INFO - [2022-11-18 15:31:31,939] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:31:33,915] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:31:33,998] {logging_mixin.py:104} INFO - [2022-11-18 15:31:33,998] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:31:34,197] {logging_mixin.py:104} INFO - [2022-11-18 15:31:34,197] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:31:34,232] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.316 seconds
+[2022-11-18 15:32:04,842] {scheduler_job.py:182} INFO - Started process (PID=155) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:32:04,849] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:32:04,853] {logging_mixin.py:104} INFO - [2022-11-18 15:32:04,853] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:32:06,709] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:32:06,800] {logging_mixin.py:104} INFO - [2022-11-18 15:32:06,800] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:32:06,915] {logging_mixin.py:104} INFO - [2022-11-18 15:32:06,915] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:32:06,953] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.128 seconds
+[2022-11-18 15:32:37,355] {scheduler_job.py:182} INFO - Started process (PID=158) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:32:37,360] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:32:37,363] {logging_mixin.py:104} INFO - [2022-11-18 15:32:37,362] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:32:39,485] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:32:39,567] {logging_mixin.py:104} INFO - [2022-11-18 15:32:39,567] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:32:39,688] {logging_mixin.py:104} INFO - [2022-11-18 15:32:39,688] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:32:39,728] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.385 seconds
+[2022-11-18 15:33:09,851] {scheduler_job.py:182} INFO - Started process (PID=161) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:33:09,856] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:33:09,860] {logging_mixin.py:104} INFO - [2022-11-18 15:33:09,859] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:33:11,913] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:33:11,997] {logging_mixin.py:104} INFO - [2022-11-18 15:33:11,997] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:33:12,116] {logging_mixin.py:104} INFO - [2022-11-18 15:33:12,116] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:33:12,159] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.325 seconds
+[2022-11-18 15:33:42,439] {scheduler_job.py:182} INFO - Started process (PID=164) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:33:42,444] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:33:42,447] {logging_mixin.py:104} INFO - [2022-11-18 15:33:42,447] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:33:44,508] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:33:44,591] {logging_mixin.py:104} INFO - [2022-11-18 15:33:44,590] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:33:44,782] {logging_mixin.py:104} INFO - [2022-11-18 15:33:44,782] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:33:44,821] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.401 seconds
+[2022-11-18 15:34:14,997] {scheduler_job.py:182} INFO - Started process (PID=167) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:34:15,002] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:34:15,006] {logging_mixin.py:104} INFO - [2022-11-18 15:34:15,005] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:34:16,662] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:34:16,732] {logging_mixin.py:104} INFO - [2022-11-18 15:34:16,732] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:34:16,830] {logging_mixin.py:104} INFO - [2022-11-18 15:34:16,829] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:34:16,868] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.884 seconds
+[2022-11-18 15:34:47,386] {scheduler_job.py:182} INFO - Started process (PID=170) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:34:47,393] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:34:47,396] {logging_mixin.py:104} INFO - [2022-11-18 15:34:47,395] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:34:49,018] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:34:49,119] {logging_mixin.py:104} INFO - [2022-11-18 15:34:49,118] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:34:49,280] {logging_mixin.py:104} INFO - [2022-11-18 15:34:49,280] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:34:49,310] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.936 seconds
+[2022-11-18 15:35:19,894] {scheduler_job.py:182} INFO - Started process (PID=173) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:35:19,899] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:35:19,903] {logging_mixin.py:104} INFO - [2022-11-18 15:35:19,902] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:35:21,971] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:35:22,054] {logging_mixin.py:104} INFO - [2022-11-18 15:35:22,053] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:35:22,165] {logging_mixin.py:104} INFO - [2022-11-18 15:35:22,165] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:35:22,216] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.341 seconds
+[2022-11-18 15:35:52,444] {scheduler_job.py:182} INFO - Started process (PID=176) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:35:52,450] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:35:52,469] {logging_mixin.py:104} INFO - [2022-11-18 15:35:52,469] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:35:55,134] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:35:55,219] {logging_mixin.py:104} INFO - [2022-11-18 15:35:55,218] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:35:55,354] {logging_mixin.py:104} INFO - [2022-11-18 15:35:55,353] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:35:55,393] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.968 seconds
+[2022-11-18 15:36:25,943] {scheduler_job.py:182} INFO - Started process (PID=179) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:36:25,949] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:36:25,953] {logging_mixin.py:104} INFO - [2022-11-18 15:36:25,953] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:36:27,627] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:36:27,697] {logging_mixin.py:104} INFO - [2022-11-18 15:36:27,696] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:36:27,796] {logging_mixin.py:104} INFO - [2022-11-18 15:36:27,795] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:36:27,827] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.898 seconds
+[2022-11-18 15:36:58,725] {scheduler_job.py:182} INFO - Started process (PID=182) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:36:58,730] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:36:58,734] {logging_mixin.py:104} INFO - [2022-11-18 15:36:58,733] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:37:00,439] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:37:00,512] {logging_mixin.py:104} INFO - [2022-11-18 15:37:00,511] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:37:00,614] {logging_mixin.py:104} INFO - [2022-11-18 15:37:00,613] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:37:00,645] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.938 seconds
+[2022-11-18 15:37:31,177] {scheduler_job.py:182} INFO - Started process (PID=185) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:37:31,185] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:37:31,188] {logging_mixin.py:104} INFO - [2022-11-18 15:37:31,187] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:37:33,061] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:37:33,216] {logging_mixin.py:104} INFO - [2022-11-18 15:37:33,216] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:37:33,415] {logging_mixin.py:104} INFO - [2022-11-18 15:37:33,414] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:37:33,457] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.292 seconds
+[2022-11-18 15:38:04,116] {scheduler_job.py:182} INFO - Started process (PID=190) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:38:04,121] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:38:04,125] {logging_mixin.py:104} INFO - [2022-11-18 15:38:04,124] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:38:05,784] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:38:05,919] {logging_mixin.py:104} INFO - [2022-11-18 15:38:05,917] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:38:06,023] {logging_mixin.py:104} INFO - [2022-11-18 15:38:06,022] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:38:06,067] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.966 seconds
+[2022-11-18 15:38:36,951] {scheduler_job.py:182} INFO - Started process (PID=193) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:38:36,957] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:38:36,961] {logging_mixin.py:104} INFO - [2022-11-18 15:38:36,961] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:38:39,254] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:38:39,387] {logging_mixin.py:104} INFO - [2022-11-18 15:38:39,386] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:38:39,536] {logging_mixin.py:104} INFO - [2022-11-18 15:38:39,535] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:38:39,578] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.642 seconds
+[2022-11-18 15:39:10,330] {scheduler_job.py:182} INFO - Started process (PID=196) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:39:10,335] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:39:10,339] {logging_mixin.py:104} INFO - [2022-11-18 15:39:10,338] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:39:12,242] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:39:12,308] {logging_mixin.py:104} INFO - [2022-11-18 15:39:12,307] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:39:12,441] {logging_mixin.py:104} INFO - [2022-11-18 15:39:12,441] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:39:12,474] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.156 seconds
+[2022-11-18 15:39:42,816] {scheduler_job.py:182} INFO - Started process (PID=199) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:39:42,821] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:39:42,824] {logging_mixin.py:104} INFO - [2022-11-18 15:39:42,824] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:39:44,623] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:39:44,709] {logging_mixin.py:104} INFO - [2022-11-18 15:39:44,708] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:39:44,842] {logging_mixin.py:104} INFO - [2022-11-18 15:39:44,842] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:39:44,879] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 2.075 seconds
+[2022-11-18 15:40:15,155] {scheduler_job.py:182} INFO - Started process (PID=202) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:40:15,160] {scheduler_job.py:629} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-18 15:40:15,163] {logging_mixin.py:104} INFO - [2022-11-18 15:40:15,163] {dagbag.py:451} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:40:16,922] {scheduler_job.py:639} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-18 15:40:16,989] {logging_mixin.py:104} INFO - [2022-11-18 15:40:16,989] {dag.py:1824} INFO - Sync 1 DAGs
+[2022-11-18 15:40:17,099] {logging_mixin.py:104} INFO - [2022-11-18 15:40:17,099] {dag.py:2280} INFO - Setting next_dagrun for etl_solar to 2022-11-18T00:00:00+00:00
+[2022-11-18 15:40:17,133] {scheduler_job.py:190} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.992 seconds

@@ -7,7 +7,7 @@ from db import db
 class GeoModel(db.Model):
     __tablename__='geography'
     
-    locdate=db.Column(db.String(10),primary_key=True)
+    locdate=db.Column(db.String(20),primary_key=True)
     location=db.Column(db.String(10),primary_key=True)
     updated_date=db.Column(db.String(15))
     altitudeMeridian=db.Column(db.String(20))

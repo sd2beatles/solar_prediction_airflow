@@ -1,0 +1,51 @@
+[2022-11-20 06:07:53,468] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_weather_table 2022-11-20T06:07:47.701845+00:00 [queued]>
+[2022-11-20 06:07:53,543] {taskinstance.py:877} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_weather_table 2022-11-20T06:07:47.701845+00:00 [queued]>
+[2022-11-20 06:07:53,545] {taskinstance.py:1068} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 06:07:53,546] {taskinstance.py:1069} INFO - Starting attempt 1 of 1
+[2022-11-20 06:07:53,548] {taskinstance.py:1070} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 06:07:53,630] {taskinstance.py:1089} INFO - Executing <Task(MySqlOperator): checkfiles.check_weather_table> on 2022-11-20T06:07:47.701845+00:00
+[2022-11-20 06:07:53,651] {standard_task_runner.py:52} INFO - Started process 85 to run task
+[2022-11-20 06:07:53,671] {standard_task_runner.py:76} INFO - Running: ['airflow', 'tasks', 'run', 'etl_solar', 'checkfiles.check_weather_table', '2022-11-20T06:07:47.701845+00:00', '--job-id', '26', '--pool', 'default_pool', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpdq5c6vsx', '--error-file', '/tmp/tmpgfgo7qlk']
+[2022-11-20 06:07:53,675] {standard_task_runner.py:77} INFO - Job 26: Subtask checkfiles.check_weather_table
+[2022-11-20 06:07:53,901] {logging_mixin.py:104} INFO - Running <TaskInstance: etl_solar.checkfiles.check_weather_table 2022-11-20T06:07:47.701845+00:00 [running]> on host cc7a6235a592
+[2022-11-20 06:07:54,101] {taskinstance.py:1283} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=airflow
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_weather_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-20T06:07:47.701845+00:00
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-20T06:07:47.701845+00:00
+[2022-11-20 06:07:54,104] {mysql.py:72} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS weather_info(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location));
+                
+[2022-11-20 06:07:54,145] {base.py:78} INFO - Using connection to: id: mysql_solar. Host: host.docker.internal, Port: 3306, Schema: solardb, Login: david, Password: XXXXXXXX, extra: None
+[2022-11-20 06:07:54,307] {dbapi.py:180} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS weather_info(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location));
+                , parameters: None
+[2022-11-20 06:07:54,333] {dbapi.py:186} INFO - Rows affected: 0
+[2022-11-20 06:07:54,419] {taskinstance.py:1192} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=checkfiles.check_weather_table, execution_date=20221120T060747, start_date=20221120T060753, end_date=20221120T060754
+[2022-11-20 06:07:54,671] {taskinstance.py:1246} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-11-20 06:07:54,714] {local_task_job.py:146} INFO - Task exited with return code 0

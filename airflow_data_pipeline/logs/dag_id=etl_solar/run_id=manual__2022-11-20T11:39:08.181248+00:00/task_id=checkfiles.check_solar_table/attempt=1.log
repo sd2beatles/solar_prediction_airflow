@@ -1,0 +1,52 @@
+[2022-11-20 11:39:10,118] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_solar_table manual__2022-11-20T11:39:08.181248+00:00 [queued]>
+[2022-11-20 11:39:10,129] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_solar_table manual__2022-11-20T11:39:08.181248+00:00 [queued]>
+[2022-11-20 11:39:10,129] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 11:39:10,130] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-20 11:39:10,130] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 11:39:10,149] {taskinstance.py:1377} INFO - Executing <Task(MySqlOperator): checkfiles.check_solar_table> on 2022-11-20 11:39:08.181248+00:00
+[2022-11-20 11:39:10,156] {standard_task_runner.py:52} INFO - Started process 127 to run task
+[2022-11-20 11:39:10,160] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_solar_table', 'manual__2022-11-20T11:39:08.181248+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp80rr1pqw', '--error-file', '/tmp/tmpknx7s5sq']
+[2022-11-20 11:39:10,162] {standard_task_runner.py:80} INFO - Job 23: Subtask checkfiles.check_solar_table
+[2022-11-20 11:39:10,228] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_solar_table manual__2022-11-20T11:39:08.181248+00:00 [running]> on host 82103fd5e777
+[2022-11-20 11:39:10,339] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_solar_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-20T11:39:08.181248+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-20T11:39:08.181248+00:00
+[2022-11-20 11:39:10,340] {mysql.py:82} INFO - Executing: 
+            CREATE TABLE IF NOT EXISTS geography(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location));
+                
+[2022-11-20 11:39:10,358] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-11-20 11:39:10,389] {dbapi.py:208} INFO - Running statement: 
+            CREATE TABLE IF NOT EXISTS geography(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location));
+                , parameters: None
+[2022-11-20 11:39:10,394] {dbapi.py:216} INFO - Rows affected: 0
+[2022-11-20 11:39:10,435] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=checkfiles.check_solar_table, execution_date=20221120T113908, start_date=20221120T113910, end_date=20221120T113910
+[2022-11-20 11:39:10,494] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-20 11:39:10,558] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

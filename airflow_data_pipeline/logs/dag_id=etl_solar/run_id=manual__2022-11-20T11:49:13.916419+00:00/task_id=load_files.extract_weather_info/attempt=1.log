@@ -1,0 +1,54 @@
+[2022-11-20 11:49:17,844] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_weather_info manual__2022-11-20T11:49:13.916419+00:00 [queued]>
+[2022-11-20 11:49:17,865] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.load_files.extract_weather_info manual__2022-11-20T11:49:13.916419+00:00 [queued]>
+[2022-11-20 11:49:17,866] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 11:49:17,867] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-20 11:49:17,868] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 11:49:17,904] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): load_files.extract_weather_info> on 2022-11-20 11:49:13.916419+00:00
+[2022-11-20 11:49:17,913] {standard_task_runner.py:52} INFO - Started process 200 to run task
+[2022-11-20 11:49:17,920] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'load_files.extract_weather_info', 'manual__2022-11-20T11:49:13.916419+00:00', '--job-id', '44', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpq09avrrb', '--error-file', '/tmp/tmpt23s7jke']
+[2022-11-20 11:49:17,922] {standard_task_runner.py:80} INFO - Job 44: Subtask load_files.extract_weather_info
+[2022-11-20 11:49:18,040] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.load_files.extract_weather_info manual__2022-11-20T11:49:13.916419+00:00 [running]> on host 82103fd5e777
+[2022-11-20 11:49:18,154] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=load_files.extract_weather_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-20T11:49:13.916419+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-20T11:49:13.916419+00:00
+[2022-11-20 11:49:18,171] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-11-20 11:49:18,225] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 2056, in execute
+    cur.execute(*args, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/cursors.py", line 319, in _query
+    db.query(q)
+  File "/home/airflow/.local/lib/python3.7/site-packages/MySQLdb/connections.py", line 254, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.ProgrammingError: (1146, "Table 'solardb.wather_info' doesn't exist")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 171, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 189, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/preprocess/connection.py", line 15, in inner_function
+    return function(**kwargs)
+  File "/opt/airflow/dags/groups/group_loads.py", line 24, in save_data
+    sql_data=pd.read_sql_query(context['params']['sql'],context['conn'])
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 443, in read_sql_query
+    dtype=dtype,
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 2116, in read_query
+    cursor = self.execute(*args)
+  File "/home/airflow/.local/lib/python3.7/site-packages/pandas/io/sql.py", line 2068, in execute
+    raise ex from exc
+pandas.io.sql.DatabaseError: Execution failed on sql 'SELECT * FROM wather_info': (1146, "Table 'solardb.wather_info' doesn't exist")
+[2022-11-20 11:49:18,248] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=load_files.extract_weather_info, execution_date=20221120T114913, start_date=20221120T114917, end_date=20221120T114918
+[2022-11-20 11:49:18,263] {standard_task_runner.py:97} ERROR - Failed to execute job 44 for task load_files.extract_weather_info (Execution failed on sql 'SELECT * FROM wather_info': (1146, "Table 'solardb.wather_info' doesn't exist"); 200)
+[2022-11-20 11:49:18,293] {local_task_job.py:156} INFO - Task exited with return code 1
+[2022-11-20 11:49:18,341] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

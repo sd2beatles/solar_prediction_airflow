@@ -1,0 +1,28 @@
+[2022-11-20 11:50:41,805] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status manual__2022-11-20T11:50:38.390218+00:00 [queued]>
+[2022-11-20 11:50:41,820] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.check_input_status manual__2022-11-20T11:50:38.390218+00:00 [queued]>
+[2022-11-20 11:50:41,820] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 11:50:41,821] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-20 11:50:41,821] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-20 11:50:41,843] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): check_input_status> on 2022-11-20 11:50:38.390218+00:00
+[2022-11-20 11:50:41,853] {standard_task_runner.py:52} INFO - Started process 238 to run task
+[2022-11-20 11:50:41,857] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'check_input_status', 'manual__2022-11-20T11:50:38.390218+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp5bgjvnv5', '--error-file', '/tmp/tmpbucqs622']
+[2022-11-20 11:50:41,859] {standard_task_runner.py:80} INFO - Job 55: Subtask check_input_status
+[2022-11-20 11:50:41,931] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.check_input_status manual__2022-11-20T11:50:38.390218+00:00 [running]> on host 82103fd5e777
+[2022-11-20 11:50:42,058] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=check_input_status
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-20T11:50:38.390218+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-11-20T11:50:38.390218+00:00
+[2022-11-20 11:50:42,059] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-11-20 11:50:42,060] {subprocess.py:74} INFO - Running command: ['bash', '-c', "echo 'success'"]
+[2022-11-20 11:50:42,072] {subprocess.py:85} INFO - Output:
+[2022-11-20 11:50:42,075] {subprocess.py:92} INFO - success
+[2022-11-20 11:50:42,075] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-11-20 11:50:42,114] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=check_input_status, execution_date=20221120T115038, start_date=20221120T115041, end_date=20221120T115042
+[2022-11-20 11:50:42,150] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-11-20 11:50:42,233] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

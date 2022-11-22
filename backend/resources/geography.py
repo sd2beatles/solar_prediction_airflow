@@ -26,7 +26,9 @@ class GeoList(MethodView):
     @blp.arguments(PlainGeoSchema)
     @blp.response(200,GeoUpdateSchema)
     def put(self,record):
+     
         #add current date
+        
         record['updated_date']=datetime.utcnow().strftime("%Y-%m-%d")
         
         match=GeoModel(**record)
