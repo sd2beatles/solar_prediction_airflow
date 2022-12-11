@@ -1,0 +1,29 @@
+[2022-12-04 06:10:23,536] {processor.py:153} INFO - Started process (PID=46) to work on /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:10:23,540] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_transform.py for tasks to queue
+[2022-12-04 06:10:23,544] {logging_mixin.py:115} INFO - [2022-12-04 06:10:23,544] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:10:26,316] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:10:26,444] {processor.py:161} INFO - Processing /opt/airflow/dags/groups/group_transform.py took 2.927 seconds
+[2022-12-04 06:10:56,978] {processor.py:153} INFO - Started process (PID=54) to work on /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:10:56,987] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_transform.py for tasks to queue
+[2022-12-04 06:10:56,992] {logging_mixin.py:115} INFO - [2022-12-04 06:10:56,991] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:10:59,234] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:10:59,287] {processor.py:161} INFO - Processing /opt/airflow/dags/groups/group_transform.py took 2.327 seconds
+[2022-12-04 06:11:30,149] {processor.py:153} INFO - Started process (PID=61) to work on /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:11:30,152] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_transform.py for tasks to queue
+[2022-12-04 06:11:30,155] {logging_mixin.py:115} INFO - [2022-12-04 06:11:30,155] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:11:32,071] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:11:32,124] {processor.py:161} INFO - Processing /opt/airflow/dags/groups/group_transform.py took 1.988 seconds
+[2022-12-04 06:12:03,020] {processor.py:153} INFO - Started process (PID=68) to work on /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:12:03,023] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_transform.py for tasks to queue
+[2022-12-04 06:12:03,027] {logging_mixin.py:115} INFO - [2022-12-04 06:12:03,026] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:12:04,722] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:12:04,777] {processor.py:161} INFO - Processing /opt/airflow/dags/groups/group_transform.py took 1.772 seconds
+[2022-12-04 06:12:34,931] {processor.py:153} INFO - Started process (PID=75) to work on /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:12:34,934] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_transform.py for tasks to queue
+[2022-12-04 06:12:34,937] {logging_mixin.py:115} INFO - [2022-12-04 06:12:34,937] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:12:36,628] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:12:36,682] {processor.py:161} INFO - Processing /opt/airflow/dags/groups/group_transform.py took 1.766 seconds
+[2022-12-04 06:13:06,884] {processor.py:153} INFO - Started process (PID=81) to work on /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:13:06,890] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_transform.py for tasks to queue
+[2022-12-04 06:13:06,895] {logging_mixin.py:115} INFO - [2022-12-04 06:13:06,895] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transform.py
+[2022-12-04 06:13:15,806] {logging_mixin.py:115} INFO - [2022-12-04 06:13:15,805] {process_utils.py:240} INFO - Waiting up to 5 seconds for processes to exit...

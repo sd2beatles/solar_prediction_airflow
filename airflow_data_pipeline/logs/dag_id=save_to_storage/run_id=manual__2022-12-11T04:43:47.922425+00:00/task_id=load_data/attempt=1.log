@@ -1,0 +1,32 @@
+[2022-12-11T04:43:52.131+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: save_to_storage.load_data manual__2022-12-11T04:43:47.922425+00:00 [queued]>
+[2022-12-11T04:43:52.184+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: save_to_storage.load_data manual__2022-12-11T04:43:47.922425+00:00 [queued]>
+[2022-12-11T04:43:52.185+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11T04:43:52.187+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-11T04:43:52.188+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11T04:43:52.279+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): load_data> on 2022-12-11 04:43:47.922425+00:00
+[2022-12-11T04:43:52.294+0000] {standard_task_runner.py:55} INFO - Started process 57 to run task
+[2022-12-11T04:43:52.315+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'save_to_storage', 'load_data', 'manual__2022-12-11T04:43:47.922425+00:00', '--job-id', '3', '--raw', '--subdir', 'DAGS_FOLDER/test.py', '--cfg-path', '/tmp/tmpncyn53ct']
+[2022-12-11T04:43:52.325+0000] {standard_task_runner.py:83} INFO - Job 3: Subtask load_data
+[2022-12-11T04:43:52.628+0000] {task_command.py:376} INFO - Running <TaskInstance: save_to_storage.load_data manual__2022-12-11T04:43:47.922425+00:00 [running]> on host 01c108b234e9
+[2022-12-11T04:43:53.184+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=save_to_storage
+AIRFLOW_CTX_TASK_ID=load_data
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T04:43:47.922425+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T04:43:47.922425+00:00
+[2022-12-11T04:43:53.190+0000] {taskinstance.py:1851} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 175, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/operators/python.py", line 193, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/test.py", line 8, in save_to_google_stroage
+    storage_client=storage.client()
+TypeError: 'module' object is not callable
+[2022-12-11T04:43:53.263+0000] {taskinstance.py:1406} INFO - Marking task as FAILED. dag_id=save_to_storage, task_id=load_data, execution_date=20221211T044347, start_date=20221211T044352, end_date=20221211T044353
+[2022-12-11T04:43:53.382+0000] {standard_task_runner.py:105} ERROR - Failed to execute job 3 for task load_data ('module' object is not callable; 57)
+[2022-12-11T04:43:53.446+0000] {local_task_job.py:164} INFO - Task exited with return code 1
+[2022-12-11T04:43:53.767+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

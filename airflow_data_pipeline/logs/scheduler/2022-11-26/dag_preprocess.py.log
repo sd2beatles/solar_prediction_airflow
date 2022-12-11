@@ -1,0 +1,7 @@
+[2022-11-26 18:17:51,219] {processor.py:153} INFO - Started process (PID=36) to work on /opt/airflow/dags/dag_preprocess.py
+[2022-11-26 18:17:51,220] {processor.py:641} INFO - Processing file /opt/airflow/dags/dag_preprocess.py for tasks to queue
+[2022-11-26 18:17:51,221] {logging_mixin.py:115} INFO - [2022-11-26 18:17:51,221] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/dag_preprocess.py
+[2022-11-26 18:17:52,109] {processor.py:651} INFO - DAG(s) dict_keys(['etl_solar']) retrieved from /opt/airflow/dags/dag_preprocess.py
+[2022-11-26 18:17:52,298] {logging_mixin.py:115} INFO - [2022-11-26 18:17:52,298] {dag.py:2371} INFO - Sync 1 DAGs
+[2022-11-26 18:17:52,362] {logging_mixin.py:115} INFO - [2022-11-26 18:17:52,362] {dag.py:2919} INFO - Setting next_dagrun for etl_solar to 2022-11-26T00:00:00+00:00, run_after=2022-11-27T00:00:00+00:00
+[2022-11-26 18:17:52,415] {processor.py:161} INFO - Processing /opt/airflow/dags/dag_preprocess.py took 1.201 seconds

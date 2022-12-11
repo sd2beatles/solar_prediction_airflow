@@ -1,0 +1,38 @@
+[2022-11-25 03:52:16,018] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_weather_table scheduled__2022-11-24T00:00:00+00:00 [queued]>
+[2022-11-25 03:52:16,062] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_weather_table scheduled__2022-11-24T00:00:00+00:00 [queued]>
+[2022-11-25 03:52:16,063] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-25 03:52:16,063] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-25 03:52:16,063] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-25 03:52:16,092] {taskinstance.py:1377} INFO - Executing <Task(MySqlOperator): checkfiles.check_weather_table> on 2022-11-24 00:00:00+00:00
+[2022-11-25 03:52:16,103] {standard_task_runner.py:52} INFO - Started process 75 to run task
+[2022-11-25 03:52:16,125] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_weather_table', 'scheduled__2022-11-24T00:00:00+00:00', '--job-id', '272', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpxfbersa1', '--error-file', '/tmp/tmp6ronqcki']
+[2022-11-25 03:52:16,131] {standard_task_runner.py:80} INFO - Job 272: Subtask checkfiles.check_weather_table
+[2022-11-25 03:52:16,205] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-25 03:52:16,569] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_weather_table scheduled__2022-11-24T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-25 03:52:16,952] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_weather_table
+AIRFLOW_CTX_EXECUTION_DATE=2022-11-24T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-11-24T00:00:00+00:00
+[2022-11-25 03:52:16,964] {mysql.py:82} INFO - Executing: CREATE TABLE IF NOT EXISTS weather_info(
+                locdatetime VARCHAR(40),
+                location VARCHAR(40),
+                updated_date VARCHAR(13),
+                temperature FLOAT,
+                precipitation_form FLOAT,
+                precipitation_prob FLOAT,
+                humidity FLOAT,
+                wind_speed FLOAT,
+                wind_direction FLOAT,
+                cloud FLOAT,
+                primary key(locdatetime,location))
+[2022-11-25 03:52:17,074] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-11-25 03:52:17,055] {local_task_job.py:84} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-11-25 03:52:17,082] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 75. PIDs of all processes in the group: [75]
+[2022-11-25 03:52:17,156] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 75

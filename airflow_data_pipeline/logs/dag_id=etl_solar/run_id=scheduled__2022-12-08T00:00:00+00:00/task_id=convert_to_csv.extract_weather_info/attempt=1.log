@@ -1,0 +1,54 @@
+[2022-12-09 10:41:12,308] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.convert_to_csv.extract_weather_info scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:41:12,361] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.convert_to_csv.extract_weather_info scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:41:12,363] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:41:12,365] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 10:41:12,366] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:41:12,450] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): convert_to_csv.extract_weather_info> on 2022-12-08 00:00:00+00:00
+[2022-12-09 10:41:12,465] {standard_task_runner.py:52} INFO - Started process 144 to run task
+[2022-12-09 10:41:12,486] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'convert_to_csv.extract_weather_info', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '26', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpi3k580p6', '--error-file', '/tmp/tmpb7cu67r7']
+[2022-12-09 10:41:12,492] {standard_task_runner.py:80} INFO - Job 26: Subtask convert_to_csv.extract_weather_info
+[2022-12-09 10:41:12,549] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 10:41:12,773] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.convert_to_csv.extract_weather_info scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 10:41:13,288] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=convert_to_csv.extract_weather_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 10:41:13,339] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-12-09 10:41:13,529] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-09 10:41:13,709] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=convert_to_csv.extract_weather_info, execution_date=20221208T000000, start_date=20221209T104112, end_date=20221209T104113
+[2022-12-09 10:41:13,819] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 10:41:14,064] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check
+[2022-12-09 11:20:43,305] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.convert_to_csv.extract_weather_info scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 11:20:43,353] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.convert_to_csv.extract_weather_info scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 11:20:43,354] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 11:20:43,355] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 11:20:43,356] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 11:20:43,424] {taskinstance.py:1377} INFO - Executing <Task(PythonOperator): convert_to_csv.extract_weather_info> on 2022-12-08 00:00:00+00:00
+[2022-12-09 11:20:43,438] {standard_task_runner.py:52} INFO - Started process 256 to run task
+[2022-12-09 11:20:43,454] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'convert_to_csv.extract_weather_info', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '55', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmptbxa227c', '--error-file', '/tmp/tmp9iki9_1r']
+[2022-12-09 11:20:43,460] {standard_task_runner.py:80} INFO - Job 55: Subtask convert_to_csv.extract_weather_info
+[2022-12-09 11:20:43,521] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 11:20:43,720] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.convert_to_csv.extract_weather_info scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 11:20:44,064] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=convert_to_csv.extract_weather_info
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 11:20:44,110] {base.py:68} INFO - Using connection ID 'mysql_solar' for task execution.
+[2022-12-09 11:20:44,270] {python.py:173} INFO - Done. Returned value was: None
+[2022-12-09 11:20:44,341] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=convert_to_csv.extract_weather_info, execution_date=20221208T000000, start_date=20221209T112043, end_date=20221209T112044
+[2022-12-09 11:20:44,431] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 11:20:44,663] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,60 @@
+[2022-12-09 10:41:20,824] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.transform.check_output_folder scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:41:20,868] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.transform.check_output_folder scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:41:20,869] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:41:20,871] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 10:41:20,872] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:41:20,959] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): transform.check_output_folder> on 2022-12-08 00:00:00+00:00
+[2022-12-09 10:41:20,976] {standard_task_runner.py:52} INFO - Started process 166 to run task
+[2022-12-09 10:41:20,993] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'transform.check_output_folder', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '32', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmp6pfxwfkt', '--error-file', '/tmp/tmpkmgav7g8']
+[2022-12-09 10:41:20,998] {standard_task_runner.py:80} INFO - Job 32: Subtask transform.check_output_folder
+[2022-12-09 10:41:21,081] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 10:41:21,342] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.transform.check_output_folder scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 10:41:21,767] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=transform.check_output_folder
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 10:41:21,771] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-09 10:41:21,774] {subprocess.py:74} INFO - Running command: ['bash', '-c', '/opt/***/utilities/make_folder.sh /opt/***/storage/output/2022-12-09']
+[2022-12-09 10:41:21,807] {subprocess.py:85} INFO - Output:
+[2022-12-09 10:41:21,856] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-09 10:41:22,002] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=transform.check_output_folder, execution_date=20221208T000000, start_date=20221209T104120, end_date=20221209T104122
+[2022-12-09 10:41:22,092] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 10:41:22,317] {local_task_job.py:273} INFO - 3 downstream tasks scheduled from follow-on schedule check
+[2022-12-09 11:20:51,720] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.transform.check_output_folder scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 11:20:51,772] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.transform.check_output_folder scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 11:20:51,774] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 11:20:51,775] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 11:20:51,776] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 11:20:51,845] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): transform.check_output_folder> on 2022-12-08 00:00:00+00:00
+[2022-12-09 11:20:51,860] {standard_task_runner.py:52} INFO - Started process 266 to run task
+[2022-12-09 11:20:51,876] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'transform.check_output_folder', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '59', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpf2ywccyj', '--error-file', '/tmp/tmptixghmbd']
+[2022-12-09 11:20:51,881] {standard_task_runner.py:80} INFO - Job 59: Subtask transform.check_output_folder
+[2022-12-09 11:20:51,949] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 11:20:52,153] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.transform.check_output_folder scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 11:20:52,535] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=transform.check_output_folder
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 11:20:52,540] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-09 11:20:52,543] {subprocess.py:74} INFO - Running command: ['bash', '-c', '/opt/***/utilities/make_folder.sh /opt/***/storage/output/2022-12-09']
+[2022-12-09 11:20:52,582] {subprocess.py:85} INFO - Output:
+[2022-12-09 11:20:52,641] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-09 11:20:52,783] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=transform.check_output_folder, execution_date=20221208T000000, start_date=20221209T112051, end_date=20221209T112052
+[2022-12-09 11:20:52,853] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 11:20:53,124] {local_task_job.py:273} INFO - 3 downstream tasks scheduled from follow-on schedule check

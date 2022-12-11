@@ -1,0 +1,23 @@
+[2022-12-11T08:11:34.576+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_solar.transform.preprocess_weather manual__2022-12-11T08:10:48.533274+00:00 [queued]>
+[2022-12-11T08:11:34.624+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_solar.transform.preprocess_weather manual__2022-12-11T08:10:48.533274+00:00 [queued]>
+[2022-12-11T08:11:34.626+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11T08:11:34.627+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-11T08:11:34.629+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11T08:11:34.703+0000] {taskinstance.py:1383} INFO - Executing <Task(PythonOperator): transform.preprocess_weather> on 2022-12-11 08:10:48.533274+00:00
+[2022-12-11T08:11:34.717+0000] {standard_task_runner.py:55} INFO - Started process 182 to run task
+[2022-12-11T08:11:34.730+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'transform.preprocess_weather', 'manual__2022-12-11T08:10:48.533274+00:00', '--job-id', '41', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpz9khgx6m']
+[2022-12-11T08:11:34.737+0000] {standard_task_runner.py:83} INFO - Job 41: Subtask transform.preprocess_weather
+[2022-12-11T08:11:35.039+0000] {task_command.py:376} INFO - Running <TaskInstance: etl_solar.transform.preprocess_weather manual__2022-12-11T08:10:48.533274+00:00 [running]> on host 01c108b234e9
+[2022-12-11T08:11:35.524+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=transform.preprocess_weather
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T08:10:48.533274+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T08:10:48.533274+00:00
+[2022-12-11T08:11:35.655+0000] {python.py:177} INFO - Done. Returned value was: None
+[2022-12-11T08:11:35.699+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=transform.preprocess_weather, execution_date=20221211T081048, start_date=20221211T081134, end_date=20221211T081135
+[2022-12-11T08:11:35.790+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-11T08:11:35.937+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

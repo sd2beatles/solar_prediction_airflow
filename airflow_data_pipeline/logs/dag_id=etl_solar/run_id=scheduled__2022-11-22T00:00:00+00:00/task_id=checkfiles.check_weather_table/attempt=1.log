@@ -1,0 +1,73 @@
+[2022-11-25 03:52:16,133] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_weather_table scheduled__2022-11-22T00:00:00+00:00 [queued]>
+[2022-11-25 03:52:16,190] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_weather_table scheduled__2022-11-22T00:00:00+00:00 [queued]>
+[2022-11-25 03:52:16,195] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-25 03:52:16,197] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-11-25 03:52:16,197] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-11-25 03:52:16,277] {taskinstance.py:1377} INFO - Executing <Task(MySqlOperator): checkfiles.check_weather_table> on 2022-11-22 00:00:00+00:00
+[2022-11-25 03:52:16,295] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_weather_table', 'scheduled__2022-11-22T00:00:00+00:00', '--job-id', '273', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpyxjt8g6_', '--error-file', '/tmp/tmp8r82ehi5']
+[2022-11-25 03:52:16,304] {standard_task_runner.py:80} INFO - Job 273: Subtask checkfiles.check_weather_table
+[2022-11-25 03:52:16,288] {standard_task_runner.py:52} INFO - Started process 76 to run task
+[2022-11-25 03:52:16,388] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-11-25 03:52:16,653] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_weather_table scheduled__2022-11-22T00:00:00+00:00 [running]> on host 8a647070b091
+[2022-11-25 03:52:17,075] {local_task_job.py:84} ERROR - Received SIGTERM. Terminating subprocesses
+[2022-11-25 03:52:17,122] {process_utils.py:129} INFO - Sending Signals.SIGTERM to group 76. PIDs of all processes in the group: [76]
+[2022-11-25 03:52:17,122] {process_utils.py:80} INFO - Sending the signal Signals.SIGTERM to group 76
+[2022-11-25 03:52:17,159] {taskinstance.py:1541} ERROR - Received SIGTERM. Terminating subprocesses.
+[2022-11-25 03:52:17,199] {taskinstance.py:1889} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1451, in _run_raw_task
+    self._execute_task_with_callbacks(context, test_mode)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1558, in _execute_task_with_callbacks
+    RenderedTaskInstanceFields.write(rtif)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/utils/session.py", line 71, in wrapper
+    return func(*args, session=session, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/renderedtifields.py", line 169, in write
+    session.merge(self)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2877, in merge
+    _resolve_conflict_map=_resolve_conflict_map,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2950, in _merge
+    merged = self.get(mapper.class_, key[1], identity_token=key[2])
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2702, in get
+    identity_token=identity_token,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 2800, in _get_impl
+    load_options=load_options,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/loading.py", line 535, in load_on_pk_identity
+    bind_arguments=bind_arguments,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1670, in execute
+    result = conn._execute_20(statement, params or {}, execution_options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1520, in _execute_20
+    return meth(self, args_10style, kwargs_10style, execution_options)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 314, in _execute_on_connection
+    self, multiparams, params, execution_options
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1387, in _execute_clauseelement
+    linting=self.dialect.compiler_linting | compiler.WARN_LINTING,
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 541, in _compile_w_cache
+    **kw
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/elements.py", line 570, in _compiler
+    return dialect.statement_compiler(dialect, self, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/compiler.py", line 766, in __init__
+    Compiled.__init__(self, dialect, statement, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/compiler.py", line 455, in __init__
+    self.string = self.process(self.statement, **compile_kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/compiler.py", line 490, in process
+    return obj._compiler_dispatch(self, **kwargs)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/visitors.py", line 81, in _compiler_dispatch
+    return meth(self, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/compiler.py", line 2981, in visit_select
+    select_stmt, self, **kwargs
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/sql/base.py", line 501, in create_for_statement
+    return klass.create_for_statement(statement, compiler, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/sqlalchemy/orm/context.py", line 603, in create_for_statement
+    SelectState.__init__(self, self.statement, compiler, **kw)
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/taskinstance.py", line 1543, in signal_handler
+    raise AirflowException("Task received SIGTERM signal")
+airflow.exceptions.AirflowException: Task received SIGTERM signal
+[2022-11-25 03:52:17,253] {taskinstance.py:1400} INFO - Marking task as FAILED. dag_id=etl_solar, task_id=checkfiles.check_weather_table, execution_date=20221122T000000, start_date=20221125T035216, end_date=20221125T035217
+[2022-11-25 03:52:17,307] {standard_task_runner.py:97} ERROR - Failed to execute job 273 for task checkfiles.check_weather_table (Task received SIGTERM signal; 76)
+[2022-11-25 03:52:17,338] {process_utils.py:75} INFO - Process psutil.Process(pid=76, status='terminated', exitcode=1, started='03:52:15') (76) terminated with exit code 1
+[2022-11-25 03:52:17,339] {local_task_job.py:156} INFO - Task exited with return code 143
+[2022-11-25 03:52:17,501] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check

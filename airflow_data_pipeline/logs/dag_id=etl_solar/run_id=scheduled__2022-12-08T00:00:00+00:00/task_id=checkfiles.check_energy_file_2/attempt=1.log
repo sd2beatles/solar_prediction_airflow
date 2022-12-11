@@ -1,0 +1,93 @@
+[2022-12-09 10:35:44,480] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:35:44,589] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:35:44,590] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:35:44,597] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 10:35:44,598] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:35:44,784] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): checkfiles.check_energy_file_2> on 2022-12-08 00:00:00+00:00
+[2022-12-09 10:35:44,844] {standard_task_runner.py:52} INFO - Started process 63 to run task
+[2022-12-09 10:35:44,897] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_energy_file_2', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '2', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpb5bmyhko', '--error-file', '/tmp/tmp19d4qwku']
+[2022-12-09 10:35:44,909] {standard_task_runner.py:80} INFO - Job 2: Subtask checkfiles.check_energy_file_2
+[2022-12-09 10:35:45,030] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 10:35:45,295] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 10:35:45,822] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_energy_file_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 10:35:45,826] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-09 10:35:45,830] {subprocess.py:74} INFO - Running command: ['bash', '-c', '/opt/***/utilities/check_file.sh /opt/***/utilities/storage/energy_2.csv']
+[2022-12-09 10:35:45,918] {subprocess.py:85} INFO - Output:
+[2022-12-09 10:35:45,974] {subprocess.py:92} INFO - File /opt/***/utilities/storage/energy_2.csv does not exist
+[2022-12-09 10:35:45,981] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-09 10:35:46,180] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=checkfiles.check_energy_file_2, execution_date=20221208T000000, start_date=20221209T103544, end_date=20221209T103546
+[2022-12-09 10:35:46,272] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 10:35:46,554] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-09 10:40:59,102] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:40:59,144] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 10:40:59,145] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:40:59,146] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 10:40:59,147] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 10:40:59,219] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): checkfiles.check_energy_file_2> on 2022-12-08 00:00:00+00:00
+[2022-12-09 10:40:59,233] {standard_task_runner.py:52} INFO - Started process 108 to run task
+[2022-12-09 10:40:59,250] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_energy_file_2', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '15', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpp9r_iv31', '--error-file', '/tmp/tmp42ngiz9a']
+[2022-12-09 10:40:59,255] {standard_task_runner.py:80} INFO - Job 15: Subtask checkfiles.check_energy_file_2
+[2022-12-09 10:40:59,318] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 10:40:59,520] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 10:40:59,933] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_energy_file_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 10:40:59,938] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-09 10:40:59,940] {subprocess.py:74} INFO - Running command: ['bash', '-c', '/opt/***/utilities/check_file.sh /opt/***/utilities/storage/energy_2.csv']
+[2022-12-09 10:40:59,974] {subprocess.py:85} INFO - Output:
+[2022-12-09 10:41:00,004] {subprocess.py:92} INFO - File /opt/***/utilities/storage/energy_2.csv does not exist
+[2022-12-09 10:41:00,007] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-09 10:41:00,235] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=checkfiles.check_energy_file_2, execution_date=20221208T000000, start_date=20221209T104059, end_date=20221209T104100
+[2022-12-09 10:41:00,398] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 10:41:00,964] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
+[2022-12-09 11:20:30,280] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 11:20:30,391] {taskinstance.py:1159} INFO - Dependencies all met for <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [queued]>
+[2022-12-09 11:20:30,394] {taskinstance.py:1356} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 11:20:30,397] {taskinstance.py:1357} INFO - Starting attempt 1 of 1
+[2022-12-09 11:20:30,398] {taskinstance.py:1358} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-09 11:20:30,573] {taskinstance.py:1377} INFO - Executing <Task(BashOperator): checkfiles.check_energy_file_2> on 2022-12-08 00:00:00+00:00
+[2022-12-09 11:20:30,630] {standard_task_runner.py:52} INFO - Started process 222 to run task
+[2022-12-09 11:20:30,714] {standard_task_runner.py:79} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'checkfiles.check_energy_file_2', 'scheduled__2022-12-08T00:00:00+00:00', '--job-id', '48', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmph3c48lo2', '--error-file', '/tmp/tmpxs89nifa']
+[2022-12-09 11:20:30,724] {standard_task_runner.py:80} INFO - Job 48: Subtask checkfiles.check_energy_file_2
+[2022-12-09 11:20:30,926] {warnings.py:110} WARNING - /home/***/.local/lib/python3.7/site-packages/***/configuration.py:470: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  option = self._get_environment_variables(deprecated_key, deprecated_section, key, section)
+
+[2022-12-09 11:20:31,260] {task_command.py:369} INFO - Running <TaskInstance: etl_solar.checkfiles.check_energy_file_2 scheduled__2022-12-08T00:00:00+00:00 [running]> on host 4d9af2ba34e6
+[2022-12-09 11:20:31,765] {taskinstance.py:1571} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=checkfiles.check_energy_file_2
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-08T00:00:00+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=scheduled__2022-12-08T00:00:00+00:00
+[2022-12-09 11:20:31,770] {subprocess.py:62} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-09 11:20:31,772] {subprocess.py:74} INFO - Running command: ['bash', '-c', '/opt/***/utilities/check_file.sh /opt/***/utilities/storage/energy_2.csv']
+[2022-12-09 11:20:31,815] {subprocess.py:85} INFO - Output:
+[2022-12-09 11:20:31,847] {subprocess.py:92} INFO - File /opt/***/utilities/storage/energy_2.csv does not exist
+[2022-12-09 11:20:31,851] {subprocess.py:96} INFO - Command exited with return code 0
+[2022-12-09 11:20:32,069] {taskinstance.py:1400} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=checkfiles.check_energy_file_2, execution_date=20221208T000000, start_date=20221209T112030, end_date=20221209T112032
+[2022-12-09 11:20:32,160] {local_task_job.py:156} INFO - Task exited with return code 0
+[2022-12-09 11:20:32,420] {local_task_job.py:273} INFO - 1 downstream tasks scheduled from follow-on schedule check

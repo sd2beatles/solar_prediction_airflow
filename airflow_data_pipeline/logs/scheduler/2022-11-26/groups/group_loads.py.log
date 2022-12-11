@@ -1,0 +1,5 @@
+[2022-11-26 18:17:51,227] {processor.py:153} INFO - Started process (PID=37) to work on /opt/airflow/dags/groups/group_loads.py
+[2022-11-26 18:17:51,228] {processor.py:641} INFO - Processing file /opt/airflow/dags/groups/group_loads.py for tasks to queue
+[2022-11-26 18:17:51,229] {logging_mixin.py:115} INFO - [2022-11-26 18:17:51,229] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_loads.py
+[2022-11-26 18:17:52,044] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_loads.py
+[2022-11-26 18:17:52,080] {processor.py:161} INFO - Processing /opt/airflow/dags/groups/group_loads.py took 0.857 seconds

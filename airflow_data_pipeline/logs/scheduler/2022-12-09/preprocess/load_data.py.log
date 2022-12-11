@@ -1,0 +1,90 @@
+[2022-12-09 14:11:19,564] {processor.py:153} INFO - Started process (PID=3423) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:11:19,566] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:11:19,569] {logging_mixin.py:115} INFO - [2022-12-09 14:11:19,569] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:11:20,593] {logging_mixin.py:115} INFO - [2022-12-09 14:11:20,571] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/preprocess/load_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/preprocess/load_data.py", line 3, in <module>
+    from decouple import config
+ModuleNotFoundError: No module named 'decouple'
+[2022-12-09 14:11:20,600] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:11:20,676] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 1.127 seconds
+[2022-12-09 14:11:51,084] {processor.py:153} INFO - Started process (PID=3431) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:11:51,087] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:11:51,090] {logging_mixin.py:115} INFO - [2022-12-09 14:11:51,089] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:11:51,409] {logging_mixin.py:115} INFO - [2022-12-09 14:11:51,391] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/preprocess/load_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/preprocess/load_data.py", line 3, in <module>
+    from decouple import config
+ModuleNotFoundError: No module named 'decouple'
+[2022-12-09 14:11:51,415] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:11:51,540] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.469 seconds
+[2022-12-09 14:12:22,119] {processor.py:153} INFO - Started process (PID=3439) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:12:22,121] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:12:22,124] {logging_mixin.py:115} INFO - [2022-12-09 14:12:22,124] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:12:22,437] {logging_mixin.py:115} INFO - [2022-12-09 14:12:22,419] {dagbag.py:320} ERROR - Failed to import: /opt/airflow/dags/preprocess/load_data.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 317, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/preprocess/load_data.py", line 3, in <module>
+    from decouple import config
+ModuleNotFoundError: No module named 'decouple'
+[2022-12-09 14:12:22,442] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:12:22,545] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.439 seconds
+[2022-12-09 14:12:31,995] {processor.py:153} INFO - Started process (PID=3441) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:12:31,999] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:12:32,003] {logging_mixin.py:115} INFO - [2022-12-09 14:12:32,002] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:12:32,035] {logging_mixin.py:115} INFO - [2022-12-09 14:12:32,034] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:12:32,036] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:12:32,102] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.122 seconds
+[2022-12-09 14:13:02,545] {processor.py:153} INFO - Started process (PID=3449) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:13:02,548] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:13:02,551] {logging_mixin.py:115} INFO - [2022-12-09 14:13:02,550] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:13:02,585] {logging_mixin.py:115} INFO - [2022-12-09 14:13:02,585] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:13:02,587] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:13:02,647] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.114 seconds
+[2022-12-09 14:13:32,904] {processor.py:153} INFO - Started process (PID=3457) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:13:32,907] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:13:32,910] {logging_mixin.py:115} INFO - [2022-12-09 14:13:32,909] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:13:32,943] {logging_mixin.py:115} INFO - [2022-12-09 14:13:32,942] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:13:32,944] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:13:33,005] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.114 seconds
+[2022-12-09 14:14:03,844] {processor.py:153} INFO - Started process (PID=3465) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:14:03,846] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:14:03,849] {logging_mixin.py:115} INFO - [2022-12-09 14:14:03,849] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:14:03,875] {logging_mixin.py:115} INFO - [2022-12-09 14:14:03,874] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:14:03,876] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:14:03,929] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.101 seconds
+[2022-12-09 14:14:34,618] {processor.py:153} INFO - Started process (PID=3473) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:14:34,621] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:14:34,623] {logging_mixin.py:115} INFO - [2022-12-09 14:14:34,623] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:14:34,658] {logging_mixin.py:115} INFO - [2022-12-09 14:14:34,657] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:14:34,659] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:14:34,719] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.114 seconds
+[2022-12-09 14:15:04,865] {processor.py:153} INFO - Started process (PID=3481) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:15:04,868] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:15:04,871] {logging_mixin.py:115} INFO - [2022-12-09 14:15:04,870] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:15:04,897] {logging_mixin.py:115} INFO - [2022-12-09 14:15:04,897] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:15:04,899] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:15:04,962] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.111 seconds
+[2022-12-09 14:15:35,333] {processor.py:153} INFO - Started process (PID=3489) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:15:35,336] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:15:35,339] {logging_mixin.py:115} INFO - [2022-12-09 14:15:35,339] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:15:35,375] {logging_mixin.py:115} INFO - [2022-12-09 14:15:35,375] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:15:35,381] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:15:35,502] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.181 seconds
+[2022-12-09 14:16:05,729] {processor.py:153} INFO - Started process (PID=3497) to work on /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:16:05,732] {processor.py:641} INFO - Processing file /opt/airflow/dags/preprocess/load_data.py for tasks to queue
+[2022-12-09 14:16:05,735] {logging_mixin.py:115} INFO - [2022-12-09 14:16:05,734] {dagbag.py:507} INFO - Filling up the DagBag from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:16:05,771] {logging_mixin.py:115} INFO - [2022-12-09 14:16:05,771] {dagbag.py:300} INFO - File /opt/airflow/dags/preprocess/load_data.py assumed to contain no DAGs. Skipping.
+[2022-12-09 14:16:05,773] {processor.py:653} WARNING - No viable dags retrieved from /opt/airflow/dags/preprocess/load_data.py
+[2022-12-09 14:16:05,829] {processor.py:161} INFO - Processing /opt/airflow/dags/preprocess/load_data.py took 0.113 seconds

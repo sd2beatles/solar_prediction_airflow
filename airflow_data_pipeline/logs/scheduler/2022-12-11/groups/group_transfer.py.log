@@ -1,0 +1,140 @@
+[2022-12-11T04:20:23.412+0000] {processor.py:154} INFO - Started process (PID=38) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:20:23.461+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:20:23.477+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:20:23.475+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:20:30.030+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:20:29.927+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:20:30.053+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:20:30.348+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 7.014 seconds
+[2022-12-11T04:21:00.696+0000] {processor.py:154} INFO - Started process (PID=45) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:21:00.702+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:21:00.707+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:21:00.706+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:21:03.000+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:21:02.951+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:21:03.039+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:21:03.218+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 2.547 seconds
+[2022-12-11T04:21:34.103+0000] {processor.py:154} INFO - Started process (PID=51) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:21:34.112+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:21:34.118+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:21:34.117+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:21:35.717+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:21:35.665+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:21:35.734+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:21:35.949+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.866 seconds
+[2022-12-11T04:22:06.706+0000] {processor.py:154} INFO - Started process (PID=58) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:22:06.716+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:22:06.723+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:22:06.722+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:22:08.439+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:22:08.401+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:22:08.460+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:22:08.659+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.981 seconds
+[2022-12-11T04:22:39.300+0000] {processor.py:154} INFO - Started process (PID=65) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:22:39.305+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:22:39.309+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:22:39.308+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:22:40.201+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:22:40.180+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:22:40.208+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:22:40.305+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.025 seconds
+[2022-12-11T04:23:10.802+0000] {processor.py:154} INFO - Started process (PID=72) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:23:10.812+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:23:10.816+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:23:10.816+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:23:11.867+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:23:11.847+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:23:11.874+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:23:11.964+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.182 seconds
+[2022-12-11T04:23:42.154+0000] {processor.py:154} INFO - Started process (PID=79) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:23:42.159+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:23:42.164+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:23:42.163+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:23:43.215+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:23:43.188+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:23:43.239+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:23:43.353+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.227 seconds
+[2022-12-11T04:24:14.461+0000] {processor.py:154} INFO - Started process (PID=86) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:24:14.466+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:24:14.470+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:24:14.469+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:24:16.632+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:24:16.563+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:24:16.643+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:24:16.870+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 2.447 seconds
+[2022-12-11T04:24:47.765+0000] {processor.py:154} INFO - Started process (PID=95) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:24:47.770+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:24:47.774+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:24:47.773+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:24:48.776+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:24:48.753+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:24:48.783+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:24:48.877+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.129 seconds
+[2022-12-11T04:25:19.581+0000] {processor.py:154} INFO - Started process (PID=102) to work on /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:25:19.585+0000] {processor.py:756} INFO - Processing file /opt/airflow/dags/groups/group_transfer.py for tasks to queue
+[2022-12-11T04:25:19.589+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:25:19.588+0000] {dagbag.py:537} INFO - Filling up the DagBag from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:25:20.484+0000] {logging_mixin.py:120} INFO - [2022-12-11T04:25:20.463+0000] {dagbag.py:342} ERROR - Failed to import: /opt/airflow/dags/groups/group_transfer.py
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.7/site-packages/airflow/models/dagbag.py", line 338, in parse
+    loader.exec_module(new_module)
+  File "<frozen importlib._bootstrap_external>", line 728, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/opt/airflow/dags/groups/group_transfer.py", line 3, in <module>
+    from airflow.providers.google.cloud.operators.gcs import GoogleCloudStorageCreateBucketOperator
+ImportError: cannot import name 'GoogleCloudStorageCreateBucketOperator' from 'airflow.providers.google.cloud.operators.gcs' (/home/airflow/.local/lib/python3.7/site-packages/airflow/providers/google/cloud/operators/gcs.py)
+[2022-12-11T04:25:20.491+0000] {processor.py:768} WARNING - No viable dags retrieved from /opt/airflow/dags/groups/group_transfer.py
+[2022-12-11T04:25:20.586+0000] {processor.py:176} INFO - Processing /opt/airflow/dags/groups/group_transfer.py took 1.018 seconds

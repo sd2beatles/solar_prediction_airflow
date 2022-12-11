@@ -1,0 +1,5 @@
+passlib
+google-cloud-storage
+python-decouple
+apache-airflow[gcp]==2.4.2
+

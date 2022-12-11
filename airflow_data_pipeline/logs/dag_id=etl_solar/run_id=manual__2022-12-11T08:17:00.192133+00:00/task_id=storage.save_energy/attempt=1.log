@@ -1,0 +1,27 @@
+[2022-12-11T08:18:03.769+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_solar.storage.save_energy manual__2022-12-11T08:17:00.192133+00:00 [queued]>
+[2022-12-11T08:18:03.821+0000] {taskinstance.py:1165} INFO - Dependencies all met for <TaskInstance: etl_solar.storage.save_energy manual__2022-12-11T08:17:00.192133+00:00 [queued]>
+[2022-12-11T08:18:03.822+0000] {taskinstance.py:1362} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11T08:18:03.824+0000] {taskinstance.py:1363} INFO - Starting attempt 1 of 1
+[2022-12-11T08:18:03.825+0000] {taskinstance.py:1364} INFO - 
+--------------------------------------------------------------------------------
+[2022-12-11T08:18:03.900+0000] {taskinstance.py:1383} INFO - Executing <Task(BashOperator): storage.save_energy> on 2022-12-11 08:17:00.192133+00:00
+[2022-12-11T08:18:03.918+0000] {standard_task_runner.py:55} INFO - Started process 266 to run task
+[2022-12-11T08:18:03.931+0000] {standard_task_runner.py:82} INFO - Running: ['***', 'tasks', 'run', 'etl_solar', 'storage.save_energy', 'manual__2022-12-11T08:17:00.192133+00:00', '--job-id', '64', '--raw', '--subdir', 'DAGS_FOLDER/dag_preprocess.py', '--cfg-path', '/tmp/tmpndi62866']
+[2022-12-11T08:18:03.938+0000] {standard_task_runner.py:83} INFO - Job 64: Subtask storage.save_energy
+[2022-12-11T08:18:04.208+0000] {task_command.py:376} INFO - Running <TaskInstance: etl_solar.storage.save_energy manual__2022-12-11T08:17:00.192133+00:00 [running]> on host 01c108b234e9
+[2022-12-11T08:18:04.632+0000] {taskinstance.py:1592} INFO - Exporting the following env vars:
+AIRFLOW_CTX_DAG_OWNER=***
+AIRFLOW_CTX_DAG_ID=etl_solar
+AIRFLOW_CTX_TASK_ID=storage.save_energy
+AIRFLOW_CTX_EXECUTION_DATE=2022-12-11T08:17:00.192133+00:00
+AIRFLOW_CTX_TRY_NUMBER=1
+AIRFLOW_CTX_DAG_RUN_ID=manual__2022-12-11T08:17:00.192133+00:00
+[2022-12-11T08:18:04.638+0000] {subprocess.py:63} INFO - Tmp dir root location: 
+ /tmp
+[2022-12-11T08:18:04.642+0000] {subprocess.py:75} INFO - Running command: ['/bin/bash', '-c', 'sleep 1 ']
+[2022-12-11T08:18:04.705+0000] {subprocess.py:86} INFO - Output:
+[2022-12-11T08:18:05.719+0000] {subprocess.py:97} INFO - Command exited with return code 0
+[2022-12-11T08:18:05.828+0000] {taskinstance.py:1406} INFO - Marking task as SUCCESS. dag_id=etl_solar, task_id=storage.save_energy, execution_date=20221211T081700, start_date=20221211T081803, end_date=20221211T081805
+[2022-12-11T08:18:05.914+0000] {local_task_job.py:164} INFO - Task exited with return code 0
+[2022-12-11T08:18:06.007+0000] {local_task_job.py:273} INFO - 0 downstream tasks scheduled from follow-on schedule check
